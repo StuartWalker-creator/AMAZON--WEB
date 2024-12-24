@@ -1,9 +1,9 @@
-import {cart} from '../../data/cart-class.js';
+import {cart} from './cart-class.js';
 
-import {products,getProduct} from '../../data/products.js';
-import {formatCurrency} from '../utils/money.js';
-import {deliveryOptions, getDeliveryOption} from '../../data/deliveryOptions.js';
-import {dayjs} from '../../dayFn/day.js';
+import {products,getProduct} from './products.js';
+import {formatCurrency} from './money.js';
+import {deliveryOptions, getDeliveryOption} from './deliveryOptions.js';
+import {dayjs} from './day.js';
 import {renderPaymentSummary} from './paymentSummary.js';
 
 export function renderOrderSummary(){
