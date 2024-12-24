@@ -1,4 +1,4 @@
-import {formatCurrency} from '../scripts/utils/money.js';
+import {formatCurrency} from './money.js';
 import {getProduct} from './products.js';
 import {cart} from './cart-class.js';
 
@@ -6,19 +6,7 @@ import {cart} from './cart-class.js';
 cart.updateCartQuantity();
 
 
-export const orders = JSON.parse(localStorage.getItem('order')) || [{
-  id:'23-edD-dr45_ui',orderTime:'2024-12-20',totalCostCents:5237,products:[{
-    productId:'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',quantity:2,
-    estimatedDeliveryTime:'2025-1-12',variation:null
-  },{
-    productId:'15b6fc6f-327a-4ec4-896f-486349e85a3d',quantity:1,
-    estimatedDeliveryTime:'2025-1-13',variation:null
-  }]
-},{
-  id:'23-edD-dr45rtt-900_uy_ui',orderTime:'2024-12-1',totalCostCents:8937,products:[{
-    productId:'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',quantity:5,
-    estimatedDeliveryTime:'2025-1-5',variation:null
-  }]}];
+export const orders = JSON.parse(localStorage.getItem('order')) || [];
   
 export function addOrder(order){
     orders.unshift(order)
@@ -149,7 +137,7 @@ myHtml+=`
       Quantity:${product.quantity}
     </div>
     <button data-product-id="${product.productId}" class="buy-again-button button-primary">
-      <img class="buy-again-icon" src="images/icons/buy-again.png">
+      <img class="buy-again-icon" src="buy-again.png">
         <span class="buy-again-message">Buy it again
         </span>
     </button>
