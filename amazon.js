@@ -1,8 +1,8 @@
-import {products} from '../data/products.js';
+import {products} from './products.js';
 
-import{cart} from '../data/cart-class.js';
+import{cart} from './cart-class.js';
 
-import {formatCurrency} from './utils/money.js';
+import {formatCurrency} from './money.js';
 
 alert('You can contact the developer about any issue or fixation on gmail: stuartwalker041@gmail.com')
 function renderProducts(products){
@@ -51,7 +51,7 @@ function renderProducts(products){
           <div class="product-spacer"></div>
 
           <div class="added-to-cart added-${product.id}">
-            <img src="images/icons/checkmark.png">
+            <img src="checkmark.png">
             Added
           </div>
 
