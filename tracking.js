@@ -1,7 +1,7 @@
-import {dayjs} from '../dayFn/day.js';
-import {cart} from '../data/cart-class.js';
-import {getProduct} from '../data/products.js';
-import {orders,getMonth} from '../data/orders.js';
+import {dayjs} from './day.js';
+import {cart} from './cart-class.js';
+import {getProduct} from './products.js';
+import {orders,getMonth} from './orders.js';
 
 /*
 const today = new Date();
