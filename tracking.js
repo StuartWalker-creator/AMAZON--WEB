@@ -204,7 +204,7 @@ if (button) {
   let
   search=searchInput.value;
   
-  holder.href=`amazon.html?mySearch=${search}`
+  holder.href=`index.html?mySearch=${search}`
  
  })
 }
