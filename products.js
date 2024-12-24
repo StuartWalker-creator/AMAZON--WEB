@@ -29,7 +29,7 @@ export class Products {
   this.keywords = productDetails.keywords;
   }
   getStarsURL(){
-    return `images/ratings/rating-${this.rating.stars*10}.png`
+    return `rating-${this.rating.stars*10}.png`
   }
   getPrice(){
     return `${formatCurrency(this.priceCents)}`
